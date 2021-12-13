@@ -4,7 +4,9 @@
       :mainNavLinks="headerMainNavLinks"
       :rigthNavLinks="headerRigthNavLinks"
     />
-    <AppFooter/>
+    <AppFooter
+      :restaurantsInfo="restaurantsInfo"
+    />
   </div>
 </template>
 
@@ -20,6 +22,9 @@ export default {
   },
   data() {
     return {
+      
+      // header
+
       // links main nav header
       headerMainNavLinks: [
         {
@@ -60,6 +65,7 @@ export default {
         },
       ],
 
+      // links rigth nav header
       headerRigthNavLinks: [
         {
           img: '/svg/svg-1.svg',
@@ -70,6 +76,32 @@ export default {
           img: null,
           text: 'search',
           href: '#'
+        },
+      ],
+
+      // footer
+
+      // restautants info
+      restaurantsInfo: [
+        {
+          street: '1614 E. Bell Rd #104.',
+          city: 'Salerno, AZ 85022',
+          phone: '(602) 867-1010'
+        },
+        {
+          street: '204 E. Pizzetta Tommaso',
+          city: 'Sorrento, AZ 85022',
+          phone: '(358) 867-1010'
+        },
+        {
+          street: 'Vale Puglia 54',
+          city: 'Torre Del Greco, AZ 85022',
+          phone: '(359) 867-1010'
+        },
+        {
+          street: 'Corso Itali AA',
+          city: 'Naples, AZ 85022',
+          phone: '(989) 867-1010'
         },
       ]
     }

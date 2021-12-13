@@ -1,7 +1,7 @@
 <template>
     <footer>
         <h4>
-
+            find our restaurant
         </h4>
         <ul>
             <li v-for="restaurant, i in restaurantsInfo" :key="i">
