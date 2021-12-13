@@ -6,6 +6,7 @@
     />
     <AppFooter
       :restaurantsInfo="restaurantsInfo"
+      :workingTime="workingTime"
     />
   </div>
 </template>
@@ -102,6 +103,26 @@ export default {
           street: 'Corso Itali AA',
           city: 'Naples, AZ 85022',
           phone: '(989) 867-1010'
+        },
+      ],
+
+      // working time
+      workingTime: [
+        {
+          day: 'monday',
+          hours: 'Kitchen Closed'
+        },
+        {
+          day: 'tuesday until friday',
+          hours: '9:00 - 22:00'
+        },
+        {
+          day: 'saturday',
+          hours: '11am to midnight'
+        },
+        {
+          day: 'sunday',
+          hours: '9:00 - 22:00'
         },
       ]
     }
