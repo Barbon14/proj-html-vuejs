@@ -3,7 +3,7 @@
         <nav>
             <!-- order online -->
             <a href="#" class="btn">
-                
+                order online
             </a>
 
             <!-- links -->
@@ -63,17 +63,22 @@ header {
         // flex
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         ul {
             display: flex;
             align-items: center;
 
             li {
-                margin: 0 20px;
+                margin-right: 30px;
 
                 img {
                     height: 120px;
                 }
+            }
+
+            li:last-of-type {
+                margin: 0;
             }
         }
 

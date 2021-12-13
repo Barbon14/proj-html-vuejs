@@ -92,4 +92,9 @@ a {
 ul {
   list-style: none;
 }
+
+.btn {
+  background-color: #d2401e;
+  padding: 10px 30px;
+}
 </style>
