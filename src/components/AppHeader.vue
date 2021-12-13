@@ -3,17 +3,17 @@
         <nav>
             <!-- order online -->
             <a href="#" class="btn">
-
+                
             </a>
 
             <!-- links -->
-            <ul>
-                <li v-for="link, i in navLinks" :key="i">
+            <ul id="main_nav">
+                <li v-for="link, i in mainNavLinks" :key="i">
                     <a :href="link.href">
                         <img
                             v-if="link.img != null"
-                            :src="require(`../assets/img/logos/${link.img}`)" 
-                            alt=""
+                            :src="require(`../assets${link.img}`)" 
+                            :alt="link.text"
                         >
                         {{ link.text }}
                     </a>
@@ -21,11 +21,15 @@
             </ul>
 
             <!-- cart and search -->
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="" alt="">
-
+            <ul id="rigth_nav">
+                <li v-for="link, i in rigthNavLinks" :key="i">
+                    <a :href="link.href">
+                        <img
+                            v-if="link.img != null"
+                            :src="require(`../assets${link.img}`)" 
+                            :alt="link.text"
+                        >
+                        {{ link.text }}
                     </a>
                 </li>
             </ul>
@@ -37,7 +41,8 @@
 export default {
     name: 'AppHeader',
     props: {
-        navLinks:Array
+        mainNavLinks:Array,
+        rigthNavLinks:Array
     }
 }
 </script>
@@ -69,6 +74,14 @@ header {
                 img {
                     height: 120px;
                 }
+            }
+        }
+
+        #rigth_nav {
+
+            img {
+                height: 20px;
+                filter: invert(1);
             }
         }
     }

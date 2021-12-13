@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <AppHeader
-      :navLinks="headerNavLinks"
+      :mainNavLinks="headerMainNavLinks"
+      :rigthNavLinks="headerRigthNavLinks"
     />
   </div>
 </template>
@@ -17,34 +18,54 @@ export default {
   data() {
     return {
       // links main nav header
-      headerNavLinks: [
+      headerMainNavLinks: [
         {
+          img: null,
           text: 'home',
           href: '#'
         },
         {
+          img: null,
           text: 'pages',
           href: '#'
         },
         {
+          img: null,
           text: 'menu',
           href: '#'
         },
         {
           // logo
-          img: 'h5-logo-divided-header.png',
+          img: '/img/logos/h5-logo-divided-header.png',
+          text: null,
           href: '#'
         },
         {
+          img: null,
           text: 'event',
           href: '#'
         },
         {
+          img: null,
           text: 'blog',
           href: '#'
         },
         {
+          img: null,
           text: 'landing',
+          href: '#'
+        },
+      ],
+
+      headerRigthNavLinks: [
+        {
+          img: '/svg/svg-1.svg',
+          text: 'cart',
+          href: '#'
+        },
+        {
+          img: null,
+          text: 'search',
           href: '#'
         },
       ]
