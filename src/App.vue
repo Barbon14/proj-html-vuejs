@@ -118,6 +118,7 @@ export default {
 
 body {
   font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
 }
 
 a {
