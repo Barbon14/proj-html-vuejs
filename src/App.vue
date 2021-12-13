@@ -4,16 +4,19 @@
       :mainNavLinks="headerMainNavLinks"
       :rigthNavLinks="headerRigthNavLinks"
     />
+    <AppFooter/>
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   data() {
     return {
