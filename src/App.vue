@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <AppHeader/>
+    <AppHeader
+      :navLinks="headerNavLinks"
+    />
   </div>
 </template>
 
@@ -11,6 +13,42 @@ export default {
   name: 'App',
   components: {
     AppHeader
+  },
+  data() {
+    return {
+      // links main nav header
+      headerNavLinks: [
+        {
+          text: 'home',
+          href: '#'
+        },
+        {
+          text: 'pages',
+          href: '#'
+        },
+        {
+          text: 'menu',
+          href: '#'
+        },
+        {
+          // logo
+          img: 'h5-logo-divided-header.png',
+          href: '#'
+        },
+        {
+          text: 'event',
+          href: '#'
+        },
+        {
+          text: 'blog',
+          href: '#'
+        },
+        {
+          text: 'landing',
+          href: '#'
+        },
+      ]
+    }
   }
 }
 </script>
