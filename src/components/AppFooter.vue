@@ -27,7 +27,16 @@
                         {{ timeInfo.hours }}
                     </li>
                 </ul>
+
+                <div class="social">
+                    <h6>
+                        follow us:
+                    </h6>
+                </div>
             </div>
+            <h2>
+                the don peppe crew first and foremost values an authentic, well baked slice of pizza.
+            </h2>
         </section>
         <img :src="require('../assets/img/footer-img-1.jpg')" alt="">
     </footer>
@@ -50,15 +59,22 @@ footer {
 
     #footer_info {
         width: 50%;
-        padding: 30px;
+        padding: 50px;
+        padding-top: 100px;
         display: flex;
         justify-content: space-between;
     }
-
+    
+    h2,
     h4, 
     h6 {
         color: #b7903c;
         text-transform: uppercase;
+    }
+
+    h2 {
+        width: 33%;
+        color: white;
     }
 
     li {
