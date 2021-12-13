@@ -51,8 +51,9 @@ footer {
     #footer_info {
         width: 50%;
         padding: 30px;
+        display: flex;
+        justify-content: space-between;
     }
-
 
     h4, 
     h6 {
