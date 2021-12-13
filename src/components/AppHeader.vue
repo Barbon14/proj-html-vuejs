@@ -43,5 +43,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+header {
+    background-color: #181818;
+    text-transform: uppercase;
 
+    a {
+        color: white;
+    }
+
+    nav {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        // flex
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                margin: 0 20px;
+
+                img {
+                    height: 120px;
+                }
+            }
+        }
+    }
+}
 </style>>

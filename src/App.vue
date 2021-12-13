@@ -59,4 +59,16 @@ export default {
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
 </style>
