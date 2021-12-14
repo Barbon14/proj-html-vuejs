@@ -195,4 +195,12 @@ ul {
 section {
   padding: 10px 0;
 }
+
+.text_red {
+  color: #a43f22;
+}
+
+.text_gray {
+  color: #a6a6a6;
+}
 </style>

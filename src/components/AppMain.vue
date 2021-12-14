@@ -3,7 +3,8 @@
         <section>
             <img 
                 class="thumb"
-                v-for="thumb, i in thumbs" :key="i"
+                v-for="thumb, i in thumbs" 
+                :key="`thumb-${i}`"
                 :src="require(`../assets/img/jumbo/${thumb}`)" 
                 alt=""
             >
@@ -17,24 +18,36 @@
                 washington post 2018
             </h6>
         </section>
-        <section id="menu">
+        <section id="menu_list">
             <div class="section_img">
                 <img src="../assets/img/h1-img-4.jpg" alt="">
                 <img src="../assets/img/h1-img-7n.png" alt="">
             </div>
             <div id="menu_info">
-                <h2>
-                    specials*
-                </h2>
-                <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, numquam
-                </span>
-                <div v-for="menu, i in menus" :key="i">
-                    <h3>
-                        <span>{{ menu.price }}</span> {{ menu.name }}
-                    </h3>
-                    <div>
-                        {{ menu.description }}
+                <div>
+                    <h2>
+                        specials*
+                    </h2>
+                    <span class="text_gray">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, numquam
+                    </span>
+                    <div
+                        class="menu" 
+                        v-for="menu, i in menus" 
+                        :key="`menu-${i}`"
+                    >
+                        <h3 class="price text_red">
+                            {{ menu.price }}
+                        </h3>
+                        <div>
+                            <h3>
+                                {{ menu.name }}
+                            </h3>
+                            <div class="description text_gray">
+                                {{ menu.description }}
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -58,6 +71,15 @@ main {
     .thumb {
         width: calc(25% - 10px);
         margin: 0 5px;
+    }
+
+    .section_img {
+        width: 50%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
     }
 
     #testimonials {
@@ -87,6 +109,57 @@ main {
         h6 {
             color: #ca3e12;
             font-weight: 500;
+        }
+    }
+
+    #menu_list {
+        display: flex;
+
+        .section_img {
+            
+            img:last-of-type {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 40%;
+            }
+        }
+
+        #menu_info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2,
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                font-weight: 500;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            &> div {
+                width: 450px;
+            }
+
+            .menu {
+                margin: 20px 0px;
+                display: flex;
+
+                .price {
+                    width: 45px;
+                }
+
+                .description {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
