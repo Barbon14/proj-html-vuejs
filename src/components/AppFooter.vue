@@ -38,7 +38,7 @@
                 the don peppe crew first and foremost values an authentic, well baked slice of pizza.
             </h2>
         </section>
-        <img :src="require('../assets/img/footer-img-1.jpg')" alt="">
+        <img src="../assets/img/footer-img-1.jpg" alt="">
     </footer>
 </template>
 
@@ -56,6 +56,7 @@ export default {
 footer {
     background-color: #181818;
     display: flex;
+    height: 630px;
 
     #footer_info {
         width: 50%;
@@ -84,6 +85,7 @@ footer {
     
     img {
         width: 50%;
+        object-fit: cover;
     }
 }
 </style>>
