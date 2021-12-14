@@ -47,10 +47,14 @@
                                 {{ menu.description }}
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="disclaimer">
+            <h2>
+                go ahead and build your own pizza we wont't judge!
+            </h2>
         </section>
     </main>
 </template>
@@ -160,6 +164,17 @@ main {
                     font-size: 14px;
                 }
             }
+        }
+    }
+
+    #disclaimer {
+        background-image: url('../assets/img/h3-background-img.jpg');
+        padding: 120px 66% 120px 15%;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 55px;
+            color: white;
         }
     }
 }
