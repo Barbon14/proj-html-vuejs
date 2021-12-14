@@ -9,17 +9,13 @@
             >
         </section>
         <section id="testimonials">
-            <div>
-                <h2>
-                    "
-                </h2>
-                <h3>
-                    "forget the trendy pizza shops, this hidden spot makes the best new york-style pizza slice in naples"
-                </h3>
-                <h5>
-                    washington post 2018
-                </h5>
-            </div>
+            <i class="fas fa-quote-left"></i>
+            <h3>
+                "forget the trendy pizza shops, this hidden spot makes the best new york-style pizza slice in naples"
+            </h3>
+            <h6>
+                washington post 2018
+            </h6>
         </section>
     </main>
 </template>
@@ -43,7 +39,32 @@ main {
 
     #testimonials {
         background-image: url('../assets/img/h3-testimonials-bckgrnd.jpg');
-        height: 495px;
+        background-position: center;
+        height: 450px;
+        text-transform: uppercase;
+        text-align: center;
+        // flex
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .fas {
+            color: #b7903c;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            width: 36%;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        h6 {
+            color: #ca3e12;
+            font-weight: 500;
+        }
     }
 }
 </style>
