@@ -57,7 +57,11 @@
             </h2>
         </section>
         <section id="team">
-            <TeamCard/>
+            <TeamCard
+                v-for="mate, i in teamInfo"
+                :key="`mate-${i}`"
+                :mate="mate"
+            />
         </section>
     </main>
 </template>
@@ -74,6 +78,44 @@ export default {
     props: {
         thumbs: Array,
         menus: Array
+    },
+    data() {
+        return {
+            teamInfo: [
+                {
+                    pic: 'h1-team-1a-700x700.jpg',
+                    name: 'peter anderson',
+                    role: 'Head Chef',
+                    instagram: '#',
+                    twitter: '#',
+                    facebook: '#'
+                },
+                {
+                    pic: 'h1-team-2a.jpg',
+                    name: 'sharon hayes',
+                    role: 'Executive Chef',
+                    instagram: '#',
+                    twitter: '#',
+                    facebook: '#'
+                },
+                {
+                    pic: 'h1-team-4a.jpg',
+                    name: 'frank bailey',
+                    role: 'Kitchen porter',
+                    instagram: '#',
+                    twitter: '#',
+                    facebook: '#'
+                },
+                {
+                    pic: 'h1-team-3a.jpg',
+                    name: 'carol simpson',
+                    role: 'Sous Chef',
+                    instagram: '#',
+                    twitter: '#',
+                    facebook: '#'
+                }
+            ]
+        }
     }
 }
 </script>
@@ -185,6 +227,11 @@ main {
             font-size: 55px;
             color: white;
         }
+    }
+
+    #team {
+        display: flex;
+        background-image: radial-gradient(#d1d4d8 1px,transparent 1px),radial-gradient(#d1d4d8 1px,transparent 1px);
     }
 }
 </style>
