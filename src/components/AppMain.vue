@@ -1,7 +1,8 @@
 <template>
     <main>
         <section>
-            <img
+            <img 
+                class="thumb"
                 v-for="thumb, i in thumbs" :key="i"
                 :src="require(`../assets/img/jumbo/${thumb}`)" 
                 alt=""
@@ -20,5 +21,11 @@ export default {
 </script>
     
 <style lang="scss" scoped>
+main {
 
+    .thumb {
+        width: calc(25% - 10px);
+        margin: 0 5px;
+    }
+}
 </style>

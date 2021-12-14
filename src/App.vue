@@ -169,4 +169,8 @@ ul {
   background-color: #d2401e;
   padding: 10px 30px;
 }
+
+section {
+  padding: 10px 0;
+}
 </style>
