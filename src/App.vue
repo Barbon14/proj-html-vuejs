@@ -4,7 +4,9 @@
       :mainNavLinks="headerMainNavLinks"
       :rigthNavLinks="headerRigthNavLinks"
     />
-    <AppMain/>
+    <AppMain
+      :thumbs="thumbsJumbo"
+    />
     <AppFooter
       :restaurantsInfo="restaurantsInfo"
       :workingTime="workingTime"
@@ -81,6 +83,16 @@ export default {
           text: 'search',
           href: '#'
         },
+      ],
+
+      // main
+
+      // thumbs under jumbo
+      thumbsJumbo: [
+        'h3-img-1.jpg',
+        'h3-img-2.jpg',
+        'h3-img-3.jpg',
+        'h3-img-4.jpg'
       ],
 
       // footer
