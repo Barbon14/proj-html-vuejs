@@ -56,12 +56,21 @@
                 go ahead and build your own pizza we wont't judge!
             </h2>
         </section>
+        <section id="team">
+            <TeamCard/>
+        </section>
     </main>
 </template>
 
 <script>
+import TeamCard from "@/components/TeamCard.vue";
+
+
 export default {
     name: 'AppMain',
+    components: {
+        TeamCard
+    },
     props: {
         thumbs: Array,
         menus: Array
