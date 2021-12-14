@@ -17,6 +17,28 @@
                 washington post 2018
             </h6>
         </section>
+        <section id="menu">
+            <div class="section_img">
+                <img src="../assets/img/h1-img-4.jpg" alt="">
+                <img src="../assets/img/h1-img-7n.png" alt="">
+            </div>
+            <div id="menu_info">
+                <h2>
+                    specials*
+                </h2>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, numquam
+                </span>
+                <div v-for="menu, i in menus" :key="i">
+                    <h3>
+                        <span>{{ menu.price }}</span> {{ menu.name }}
+                    </h3>
+                    <div>
+                        {{ menu.description }}
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -24,7 +46,8 @@
 export default {
     name: 'AppMain',
     props: {
-        thumbs: Array
+        thumbs: Array,
+        menus: Array
     }
 }
 </script>

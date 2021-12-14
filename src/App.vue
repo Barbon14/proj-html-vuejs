@@ -6,6 +6,7 @@
     />
     <AppMain
       :thumbs="thumbsJumbo"
+      :menus="menusInfo"
     />
     <AppFooter
       :restaurantsInfo="restaurantsInfo"
@@ -93,6 +94,25 @@ export default {
         'h3-img-2.jpg',
         'h3-img-3.jpg',
         'h3-img-4.jpg'
+      ],
+
+      // menus info section
+      menusInfo: [
+        {
+          price: '$10',
+          name: 'combo piccolo',
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati in possimus nobis'
+        },
+        {
+          price: '$20',
+          name: 'combo mezzo',
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati in possimus nobis'
+        },
+        {
+          price: '$30',
+          name: 'combo grande',
+          description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati in possimus nobis'
+        },
       ],
 
       // footer
