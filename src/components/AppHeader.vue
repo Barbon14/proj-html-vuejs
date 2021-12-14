@@ -34,6 +34,10 @@
                 </li>
             </ul>
         </nav>
+        <section id="jumbotron">
+            <img src="../assets/img/jumbo/h3-rev-img-5.png" alt="">
+            <img src="../assets/img/jumbo/h3-rev-img-6.png" alt="">
+        </section>
     </header>
 </template>
 
@@ -51,6 +55,7 @@ export default {
 header {
     background-color: #181818;
     text-transform: uppercase;
+    padding-bottom: 150px;
 
     a {
         color: white;
@@ -88,6 +93,18 @@ header {
                 height: 20px;
                 filter: invert(1);
             }
+        }
+    }
+
+    #jumbotron {
+        text-align: center;
+        position: relative;
+
+        img:last-of-type {
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }
