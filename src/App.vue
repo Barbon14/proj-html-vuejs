@@ -230,6 +230,10 @@ section {
   color: #a43f22;
 }
 
+.text_brown {
+  color: #ab4027;
+}
+
 .text_gray {
   color: #8f8f8f;
 }

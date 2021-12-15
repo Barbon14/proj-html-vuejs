@@ -98,7 +98,7 @@
         </section>
         <section id="events">
             <div class="event_list">
-                <h6>
+                <h6 class="text_brown">
                     made with love
                 </h6>
                 <h2>
@@ -372,6 +372,23 @@ main {
             display: flex;
             justify-content: space-around;
             padding: 80px 0;
+        }
+    }
+
+    #events {
+        background-color: #181818;
+        display: flex;
+        padding: 0;
+        color: white;
+
+        .event_list {
+            width: 50%;
+            padding: 180px;
+            padding-right: 280px;
+        }
+
+        .event_card:last-of-type {
+            border: none;
         }
     }
 }
