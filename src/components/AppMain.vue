@@ -1,13 +1,21 @@
 <template>
     <main>
-        <section>
-            <img 
+        <section id="thumbs">
+            <div
                 class="thumb"
                 v-for="thumb, i in thumbs" 
                 :key="`thumb-${i}`"
-                :src="require(`../assets/img/jumbo/${thumb}`)" 
-                alt=""
             >
+                <img 
+                    :src="require(`../assets/img/jumbo/${thumb}`)" 
+                    alt=""
+                >
+                <div class="view_img">
+                    <a href="#">
+                        <i class="far fa-eye"></i>
+                    </a>
+                </div>
+            </div>
         </section>
         <section id="testimonials">
             <i class="fas fa-quote-left"></i>
@@ -266,17 +274,58 @@ export default {
 <style lang="scss" scoped>
 main {
 
-    .thumb {
-        width: calc(25% - 10px);
-        margin: 0 5px;
-    }
-
     .section_img {
         width: 50%;
         position: relative;
 
         img {
             width: 100%;
+        }
+    }
+
+    #thumbs {
+        display: flex;
+
+        a {
+            color: white;
+        }
+
+        .thumb {
+            position: relative;
+            width: calc(25% - 10px);
+            margin: 0 5px;
+            
+            img {
+                width: 100%;
+            }
+
+            .view_img {
+                background-color: #ca3e12;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                // position
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                // flex
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &:hover .view_img {
+                display: flex;
+            }
+
+            &:hover {
+                img {
+
+                    opacity: 0.7;
+                }
+            }
         }
     }
 
