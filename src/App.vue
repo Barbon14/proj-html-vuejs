@@ -13,6 +13,11 @@
       :restaurantsInfo="restaurantsInfo"
       :workingTime="workingTime"
     />
+    <div id="go_top">
+      <a href="#top">
+        <img src="./assets/svg/svg-4.svg" alt="">
+      </a>
+    </div>
   </div>
 </template>
 
@@ -207,47 +212,63 @@ export default {
 body {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
+  scroll-behavior: smooth;
+
+  #go_top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #f6f7f2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .btn {
+    background-color: #d2401e;
+    padding: 15px 30px;
+    display: inline-block;
+  }
+
+  section {
+    padding: 10px 0;
+  }
+
+  .text_red {
+    color: #a43f22;
+  }
+
+  .text_brown {
+    color: #ab4027;
+  }
+
+  .text_gray {
+    color: #8f8f8f;
+  }
+
+  .text_gold {
+    color: #b7903c;
+  }
+
+  .text_orange {
+    color: #d2401e;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+  }
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-.btn {
-  background-color: #d2401e;
-  padding: 15px 30px;
-  display: inline-block;
-}
-
-section {
-  padding: 10px 0;
-}
-
-.text_red {
-  color: #a43f22;
-}
-
-.text_brown {
-  color: #ab4027;
-}
-
-.text_gray {
-  color: #8f8f8f;
-}
-
-.text_gold {
-  color: #b7903c;
-}
-
-.text_orange {
-  color: #d2401e;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-}
 </style>
