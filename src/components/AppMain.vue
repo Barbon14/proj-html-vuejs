@@ -104,7 +104,11 @@
                 <h2>
                     delish pizza deals
                 </h2>
-                <EventCard/>
+                <EventCard
+                    v-for="event, i in eventsInfo"
+                    :key="`event-${i}`"
+                    :event="event"
+                />
             </div>
             <div class="section_img">
                 <img src="../assets/img/h3-img-5a.jpg" alt="">
@@ -133,7 +137,7 @@ export default {
     data() {
         return {
 
-            // team components
+            //team components
             teamInfo: [
                 {
                     pic: 'h1-team-1a-700x700.jpg',
@@ -169,7 +173,7 @@ export default {
                 }
             ],
 
-            // products info
+            //products info
             productsInfo: [
                 {
                     pic: 'h3-product-img-1a-100x100.png',
@@ -206,6 +210,27 @@ export default {
                     name: 'campagnola',
                     price: '$50.00 - $95.00',
                     sold: false
+                }
+            ],
+
+            eventsInfo: [
+                {
+                    day: '02',
+                    month: 'nov',
+                    name: 'traditional neapolitan pies in kyoto pizza mercato',
+                    address: '204 e. pizzetta tommaso'
+                },
+                {
+                    day: '03',
+                    month: 'nov',
+                    name: 'terarazza patio dining space opening this weekend',
+                    address: '204 e. pizzetta tommaso'
+                },
+                {
+                    day: '05',
+                    month: 'nov',
+                    name: 'sienna private dining room with stépahane brunn',
+                    address: '204 e. pizzetta tommaso'
                 }
             ]
         }
