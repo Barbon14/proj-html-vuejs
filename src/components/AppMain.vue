@@ -104,6 +104,7 @@
                 <h2>
                     delish pizza deals
                 </h2>
+                <EventCard/>
             </div>
             <div class="section_img">
                 <img src="../assets/img/h3-img-5a.jpg" alt="">
@@ -115,12 +116,14 @@
 <script>
 import TeamCard from "@/components/TeamCard.vue";
 import ProductCard from "@/components/ProductCard.vue";
+import EventCard from "@/components/EventCard.vue";
 
 export default {
     name: 'AppMain',
     components: {
         TeamCard,
-        ProductCard
+        ProductCard,
+        EventCard
     },
     props: {
         thumbs: Array,
