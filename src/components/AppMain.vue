@@ -245,5 +245,16 @@ main {
         display: flex;
         background-image: radial-gradient(#d1d4d8 1px,transparent 1px),radial-gradient(#d1d4d8 1px,transparent 1px);
     }
+
+    #clients{
+        background-color: #f7f7f2;
+        padding: 80px 0;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 125px;
+        }
+    }
 }
 </style>
