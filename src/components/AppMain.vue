@@ -77,16 +77,18 @@
             </div>
         </section>
         <section id="products">
-            <h6>
-                chose your flavor
-            </h6>
-            <h2>
-                the best pizza menu in town
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea doloremque aut nam optio error inventore, consectetur harum repellat provident.
-            </p>
-            <div>
+            <div class="products_info">
+                <h6 class="text_orange">
+                    chose your flavor
+                </h6>
+                <h2>
+                    the best pizza menu in town
+                </h2>
+                <p class="text_gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea doloremque aut nam optio error inventore, consectetur harum repellat provident.
+                </p>
+            </div>
+            <div class="products_list">
                 <ProductCard
                     v-for="product, i in productsInfo"
                     :key="`product-${i}`"
@@ -314,6 +316,20 @@ main {
 
         img {
             height: 125px;
+        }
+    }
+
+    #products {
+
+        .products_info {
+            padding: 0 30%;
+            text-align: center;
+        }
+
+        .products_list {
+            display: flex;
+            justify-content: space-around;
+            padding: 80px 0;
         }
     }
 }

@@ -231,7 +231,15 @@ section {
 }
 
 .text_gray {
-  color: #a6a6a6;
+  color: #8f8f8f;
+}
+
+.text_gold {
+  color: #b7903c;
+}
+
+.text_orange {
+  color: #d2401e;
 }
 
 h1, h2, h3, h4, h5, h6 {
