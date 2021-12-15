@@ -76,6 +76,17 @@
                 </a>
             </div>
         </section>
+        <section id="products">
+            <h6>
+                chose your flavor
+            </h6>
+            <h2>
+                the best pizza menu in town
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea doloremque aut nam optio error inventore, consectetur harum repellat provident.
+            </p>
+        </section>
     </main>
 </template>
 
