@@ -12,6 +12,7 @@
     <AppFooter
       :restaurantsInfo="restaurantsInfo"
       :workingTime="workingTime"
+      :socials="socials"
     />
     <div id="go_top">
       <a href="#top">
@@ -194,6 +195,26 @@ export default {
           day: 'sunday',
           hours: '9:00 - 22:00'
         },
+      ],
+
+      // socials
+      socials: [
+        {
+          icon: 'fab fa-twitter',
+          href: '#'
+        },
+        {
+          icon: 'fab fa-facebook-f',
+          href: '#'
+        },
+        {
+          icon: 'fab fa-instagram',
+          href: '#'
+        },
+        {
+          icon: 'fab fa-linkedin-in',
+          href: '#'
+        }
       ]
     }
   }
@@ -268,6 +289,7 @@ body {
 
   h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
+    font-weight: 500;
   }
 }
 

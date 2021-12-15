@@ -2,7 +2,7 @@
     <footer>
         <section id="footer_info">
             <div>
-                <h4>
+                <h4 class="text_gold">
                     find our restaurant
                 </h4>
                 <ul>
@@ -16,22 +16,34 @@
                 </ul>
             </div>
             <div>
-                <h4>
+                <h4 class="text_gold">
                     working hours
                 </h4>
                 <ul>
                     <li v-for="timeInfo, i in workingTime" :key="i">
-                        <h6>
+                        <h6 class="text_gold" >
                             {{ timeInfo.day }}
                         </h6>
-                        {{ timeInfo.hours }}
+                        <div :class="timeInfo.hours.toLowerCase().includes('closed') ? 'text_red' : null">
+                            {{ timeInfo.hours }}
+                        </div>
                     </li>
                 </ul>
 
-                <div class="social">
-                    <h6>
+                <div class="socials">
+                    <h6 class="text_gold">
                         follow us:
                     </h6>
+                    <ul>
+                        <li 
+                            v-for="social, i in socials" 
+                            :key="`social-${i}`"
+                        >
+                            <a :href="social.href">
+                                <i :class="social.icon"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <h2>
@@ -47,7 +59,8 @@ export default {
     name: 'AppFooter',
     props: {
         restaurantsInfo: Array,
-        workingTime: Array
+        workingTime: Array,
+        socials: Array
     }
 }
 </script>
@@ -58,18 +71,16 @@ footer {
     display: flex;
     height: 630px;
 
+    a {
+        color: white;
+    }
+
     #footer_info {
         width: 50%;
         padding: 50px;
         padding-top: 100px;
         display: flex;
         justify-content: space-between;
-    }
-    
-    h2,
-    h4, 
-    h6 {
-        color: #b7903c;
     }
 
     h2 {
@@ -85,6 +96,19 @@ footer {
     img {
         width: 50%;
         object-fit: cover;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                margin: 0 5px;
+            }
+        }
     }
 }
 </style>>
