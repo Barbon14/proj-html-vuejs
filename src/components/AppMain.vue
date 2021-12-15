@@ -96,6 +96,19 @@
                 />
             </div>
         </section>
+        <section id="events">
+            <div class="event_list">
+                <h6>
+                    made with love
+                </h6>
+                <h2>
+                    delish pizza deals
+                </h2>
+            </div>
+            <div class="section_img">
+                <img src="../assets/img/h3-img-5a.jpg" alt="">
+            </div>
+        </section>
     </main>
 </template>
 
@@ -116,6 +129,7 @@ export default {
     },
     data() {
         return {
+
             // team components
             teamInfo: [
                 {
