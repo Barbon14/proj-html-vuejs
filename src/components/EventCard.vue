@@ -33,7 +33,7 @@ export default {
 .event_card {
     display: flex;
     border-bottom: 2px dotted #b7903c;
-    padding: 30px 0;
+    padding: 25px 0;
 
     .date {
         text-align: center;

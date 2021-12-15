@@ -114,6 +114,31 @@
                 <img src="../assets/img/h3-img-5a.jpg" alt="">
             </div>
         </section>
+        <section id="reservation">
+            <form action="#">
+                <span class="form_input">
+                    <input type="text" placeholder="1 Person">
+                    <i class="fas fa-user-friends"></i>
+                </span>
+                <span>
+                    for
+                </span>
+                <span class="form_input">
+                    <input type="text" placeholder="11/29/2020">
+                    <i class="far fa-calendar"></i>
+                </span>
+                <span>
+                    at
+                </span>
+                <span class="form_input">
+                    <input type="text" placeholder="7:00 pm">
+                    <i class="far fa-clock"></i>
+                </span>
+                <a href="#" class="btn">
+                    book a table 
+                </a>
+            </form>
+        </section>
     </main>
 </template>
 
@@ -252,6 +277,7 @@ main {
 
         img {
             width: 100%;
+            height: 100%;
         }
     }
 
@@ -389,6 +415,31 @@ main {
 
         .event_card:last-of-type {
             border: none;
+        }
+    }
+
+    #reservation {
+        text-transform: uppercase;
+
+        a {
+            color: white;
+        }
+
+        .form_input {
+            position: relative;
+
+            input {
+                padding: 18px;
+                border: 1px solid black;  
+            }
+            
+            .fas,
+            .far {
+                position: absolute;
+                top: 5px;
+                right: 20px;
+                color: #b7903c;
+            }
         }
     }
 }

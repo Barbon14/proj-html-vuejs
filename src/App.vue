@@ -219,7 +219,7 @@ ul {
 
 .btn {
   background-color: #d2401e;
-  padding: 10px 30px;
+  padding: 15px 30px;
 }
 
 section {
