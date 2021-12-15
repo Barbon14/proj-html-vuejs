@@ -86,18 +86,22 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea doloremque aut nam optio error inventore, consectetur harum repellat provident.
             </p>
+            <div>
+                <ProductCard/>
+            </div>
         </section>
     </main>
 </template>
 
 <script>
 import TeamCard from "@/components/TeamCard.vue";
-
+import ProductCard from "@/components/ProductCard.vue";
 
 export default {
     name: 'AppMain',
     components: {
-        TeamCard
+        TeamCard,
+        ProductCard
     },
     props: {
         thumbs: Array,
