@@ -190,7 +190,6 @@ main {
 
             h2,
             h3 {
-                text-transform: uppercase;
                 margin-bottom: 5px;
                 font-weight: 500;
             }
@@ -223,7 +222,6 @@ main {
         padding: 120px 66% 120px 15%;
 
         h2 {
-            text-transform: uppercase;
             font-size: 55px;
             color: white;
         }

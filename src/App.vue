@@ -203,4 +203,8 @@ section {
 .text_gray {
   color: #a6a6a6;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
 </style>

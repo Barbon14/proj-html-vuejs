@@ -70,7 +70,6 @@ footer {
     h4, 
     h6 {
         color: #b7903c;
-        text-transform: uppercase;
     }
 
     h2 {

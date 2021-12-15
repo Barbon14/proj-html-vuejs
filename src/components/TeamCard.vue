@@ -60,10 +60,6 @@ export default {
         left: 0;
         border: 30px solid whitesmoke;
 
-        h2 {
-            text-transform: uppercase;
-        }
-
         .role{
             text-transform: capitalize;
         }
