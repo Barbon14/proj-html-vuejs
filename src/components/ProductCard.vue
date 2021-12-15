@@ -1,6 +1,6 @@
 <template>
     <div class="product_card">
-        <img :src="product.pic" :alt="product.name">
+        <img :src="require(`../assets/img/products/${product.pic}`)" :alt="product.name">
         <div class="sold_out">
             sold
         </div>
