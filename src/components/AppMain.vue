@@ -420,6 +420,17 @@ main {
 
     #reservation {
         text-transform: uppercase;
+        padding: 80px 250px;
+        background-image: url(../assets/img/h3-background-img-3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
         a {
             color: white;

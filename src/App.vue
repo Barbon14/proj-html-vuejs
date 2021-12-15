@@ -220,6 +220,7 @@ ul {
 .btn {
   background-color: #d2401e;
   padding: 15px 30px;
+  display: inline-block;
 }
 
 section {
