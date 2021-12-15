@@ -87,7 +87,11 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ea doloremque aut nam optio error inventore, consectetur harum repellat provident.
             </p>
             <div>
-                <ProductCard/>
+                <ProductCard
+                    v-for="product, i in productsInfo"
+                    :key="`product-${i}`"
+                    :product="product"
+                />
             </div>
         </section>
     </main>
@@ -110,6 +114,7 @@ export default {
     },
     data() {
         return {
+            // team components
             teamInfo: [
                 {
                     pic: 'h1-team-1a-700x700.jpg',
@@ -142,6 +147,46 @@ export default {
                     instagram: '#',
                     twitter: '#',
                     facebook: '#'
+                }
+            ],
+
+            // products info
+            productsInfo: [
+                {
+                    pic: 'h3-product-img-1a-100x100.png',
+                    name: 'bismarck',
+                    price: '$30.00',
+                    sold: false
+                },
+                {
+                    pic: 'h3-product-img-2a-150x150.png',
+                    name: 'fiori di zucca',
+                    price: '$7.00 - $50.00',
+                    sold: false
+                },
+                {
+                    pic: 'h3-product-img-3a-150x150.png',
+                    name: 'valdostana',
+                    price: '$55.00',
+                    sold: true
+                },
+                {
+                    pic: 'h3-product-img-4a-150x150.png',
+                    name: 'pizza tartufata',
+                    price: '$45.00',
+                    sold: false
+                },
+                {
+                    pic: 'h3-product-img-5a-150x150.png',
+                    name: 'francescana',
+                    price: '$25.00',
+                    sold: false
+                },
+                {
+                    pic: 'h3-product-img-6a-100x100.png',
+                    name: 'campagnola',
+                    price: '$50.00 - $95.00',
+                    sold: false
                 }
             ]
         }
