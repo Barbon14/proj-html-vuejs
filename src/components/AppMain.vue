@@ -447,7 +447,7 @@ main {
             .fas,
             .far {
                 position: absolute;
-                top: 5px;
+                top: 18px;
                 right: 20px;
                 color: #b7903c;
             }
