@@ -7,6 +7,7 @@
     <AppMain
       :thumbs="thumbsJumbo"
       :menus="menusInfo"
+      :clients="clientsInfo"
     />
     <AppFooter
       :restaurantsInfo="restaurantsInfo"
@@ -113,6 +114,35 @@ export default {
           name: 'combo grande',
           description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati in possimus nobis'
         },
+      ],
+
+      // clients section
+      clientsInfo: [
+        {
+          name: 'cowboy',
+          logo: 'h1-clients-img-4.png',
+          href: '#'
+        },
+        {
+          name: 'gordon street food',
+          logo: 'h1-clients-img-3.png',
+          href: '#'
+        },
+        {
+          name: 'big cheese',
+          logo: 'h1-clients-img-1.png',
+          href: '#'
+        },
+        {
+          name: 'bludos bar',
+          logo: 'h1-clients-img-2.png',
+          href: '#'
+        },
+        {
+          name: 'vegan',
+          logo: 'h1-clients-img-5.png',
+          href: '#'
+        }
       ],
 
       // footer

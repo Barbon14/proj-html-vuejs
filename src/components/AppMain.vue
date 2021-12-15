@@ -63,6 +63,19 @@
                 :mate="mate"
             />
         </section>
+        <section id="clients">
+            <div
+                v-for="client, i in clients"
+                :key="`client-${i}`"
+            >
+                <a :href="client.href">
+                    <img 
+                        :src="require(`../assets/img/clients/${client.logo}`)" 
+                        :alt="client.name"
+                    >
+                </a>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -77,7 +90,8 @@ export default {
     },
     props: {
         thumbs: Array,
-        menus: Array
+        menus: Array,
+        clients: Array
     },
     data() {
         return {
